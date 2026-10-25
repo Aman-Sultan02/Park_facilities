@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parks and Green Spaces – Islamabad & Rawalpindi</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Parks and Green Spaces Map</h1>
+  <p>Study area: Islamabad and Rawalpindi, Pakistan. Click a park to see its name and type.</p>
+</header>
+
+<div id="controls">
+  <input id="search" type="text" placeholder="Search by name...">
+  <select id="filter">
+    <option value="all">All types</option>
+    <option value="park">Parks</option>
+    <option value="garden">Gardens</option>
+    <option value="recreation_ground">Recreation grounds</option>
+    <option value="playground">Playgrounds</option>
+  </select>
+  <span id="status">Loading data...</span>
+</div>
+
+<div id="map"></div>
+
+<footer>
+  Data source: OpenStreetMap via Overpass API. Location names: Nominatim (OpenStreetMap).
+  Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

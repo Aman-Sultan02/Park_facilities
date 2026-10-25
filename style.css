@@ -1,0 +1,10 @@
+body { margin: 0; font-family: Arial, sans-serif; }
+header { background: #2e7d32; color: white; padding: 10px 16px; }
+header h1 { margin: 0; font-size: 20px; }
+header p { margin: 4px 0 0; font-size: 13px; }
+#controls { padding: 8px 16px; background: #edf5ee; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+#controls input, #controls select { padding: 6px; }
+#status { font-size: 13px; }
+#status.error { color: #b00020; }
+#map { height: calc(100vh - 160px); min-height: 350px; }
+footer { padding: 6px 16px; font-size: 12px; background: #f4f4f4; }
